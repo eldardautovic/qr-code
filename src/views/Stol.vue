@@ -99,7 +99,7 @@ export default {
             redirect: 'follow'
             };
 
-            fetch("http://localhost:3000", requestOptions)
+            fetch("https://qr-code-my-project.herokuapp.com/", requestOptions)
             .then(response => response.text())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
